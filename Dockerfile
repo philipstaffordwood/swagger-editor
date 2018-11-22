@@ -7,7 +7,7 @@ RUN mkdir -p /run/nginx
 
 COPY nginx.conf /etc/nginx/
 
-COPY .htpasswd /etc/nginx/.passwd
+COPY passwd /etc/nginx/passwd
 
 # copy swagger files to the `/js` folder
 COPY ./index.html /usr/share/nginx/html/
